@@ -1,0 +1,9 @@
+version: 0.2
+phases:
+  build:
+    commands:
+      - sam build -t template.yaml
+      - sam deploy --no-confirm-changeset --no-fail-on-empty-changeset --stack-name fruitbox-1 
+
+
+      
